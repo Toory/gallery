@@ -8,11 +8,7 @@ from urllib.request import urlopen, Request
 import json
 
 #Add your Reddit API outh
-reddit = praw.Reddit(client_id='',
-					 client_secret='',
-					 password='',
-					 user_agent='',
-					 username='')
+reddit = praw.Reddit(client_id='', client_secret='', password='', user_agent='', username='')
 
 class Images():
 
