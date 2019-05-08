@@ -10,7 +10,7 @@ Gallery GUI application that allows you to view images from known online service
 	git clone 'https://github.com/Toory/gallery'
 	cd gallery
 	virtualenv env
-	source ./env/bin/activiate
+	source ./env/bin/activate
 	pip install -r requirements.txt #Download all dependencies needed
 	python imageGUI.py
   
