@@ -8,7 +8,11 @@ from urllib.request import urlopen, Request
 import json
 
 #Add your Reddit API outh
-reddit = praw.Reddit(client_id='', client_secret='', password='', user_agent='', username='')
+reddit = praw.Reddit(client_id='',
+					 client_secret='',
+					 password='',
+					 user_agent='',
+					 username='')
 
 class Images():
 
@@ -99,7 +103,7 @@ class Images():
 		print(*images,len(images),sep='\n')
 		return images
 
-def Main():
+if __name__ == '__main__':
 	parser = argparse.ArgumentParser()
 	group = parser.add_mutually_exclusive_group()
 	group.add_argument('-r', '--reddit', help='Fetch 100 images from a specified subreddit (sorted by hot)\nUsage: -r aww', metavar='subreddit_name', action='store')
@@ -116,6 +120,3 @@ def Main():
 		image.Google(args.google)
 	else:
 		parser.print_help()
-
-if __name__ == '__main__':
-	Main()
